@@ -1,0 +1,25 @@
+h1 {
+    font-size: 48px;  /* the size ofthe text  */
+    text-align: center;
+    color:white;   /* the text color  */ 
+    background-color:#5a5854;   /* sets the background color  */
+    /* border-bottom: 1px solid #bdbdbd;  /* adds a border around the edge of the input box  */
+    padding: 20px 10px 20px 10px; 
+    display: block;
+}
+form{
+    background-color:#05c46b;
+    font-family: Arial,Verdana, sans-serif;
+    text-align: left;
+}
+
+input {
+    font-size: 24px; /* the size ofthe text  */
+    padding: 5px 5px 5px 30px; 
+    margin-bottom: 10px;
+}
+label{
+    font-size:24px;
+}
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Financial app survey</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        @import url('../CSS/survey-1.css');
+    </style>
+    <body>
+        <h1>The financial survery for the budget app</h1>
+        <form id="form" action = "../PHP/survery-1.php" method="POST">
+            <div class="question1">
+                <label for="question1">
+                    1.How do you track your expenses? <br>
+                </label>
+                <input type="radio" id="question1" name="question1">Using a budgeting app.<br>
+                <input type="radio" id="question1" name="question1">Writing it down on Paper.<br>
+                <input type="radio" id="question1" name="question1">In my head.<br><br><br>
+            </div>
+            <div class="question2">
+                <label for="question2">
+                    2. Which of the following are considered essential expenses for you <br>
+                </label>
+                <input type="radio" id="question2" name="question2">Rent.<br>
+                <input type="radio" id="question2" name="question2">Groceries.<br>
+                <input type="radio" id="question2" name="question2">Entertainment.<br><br><br>
+            </div>
+            <div class="question3">
+                <label for="question3">
+                    3. Do you have a monthly Budgeting plan<br>
+                </label>
+                <input type="radio" id="question3" name="question3">Yes.<br>
+                <input type="radio" id="question3" name="question3">No.<br>
+                <input type="radio" id="question3" name="question3">Don't know.<br><br><br>
+            </div>
+            <div class="question4">
+                <label for="question4">
+                    4.What are your strategies for saving money<br>
+                </label>
+                <input type="radio" id="question4" name="question4">Cutting down on eating out.<br>
+                <input type="radio" id="question4" name="question4">Using coupons.<br>
+                <input type="radio" id="question4" name="question4">Buying generic brands.<br><br><br>
+            </div>
+            <div class="question5">
+                <label for="question5">
+                    5.What percentage of your income do you allocate for savings? <br>
+                </label>
+                <input type="radio" id="question5" name="question5">Less than 10%.<br>
+                <input type="radio" id="question5" name="question5">10% ~ 20%.<br>
+                <input type="radio" id="question5" name="question5">More than 20%.<br><br><br>
+            </div>
+            <div class="question6">
+                <label for="question6">
+                    6. Which of the following do you rioritize in your budget?<br>
+                </label>
+                <input type="radio" id="question6" name="question6">Emergency fund.<br>
+                <input type="radio" id="question6" name="question6">Vacation fund.<br>
+                <input type="radio" id="question6" name="question6">Debt repayment<br><br><br>
+            </div>
+            <div class="question7">
+                <label for="question7">
+                    7.How often do you review your budge? <br>
+                </label>
+                <input type="radio" id="question7" name="question7">Weekly.<br>
+                <input type="radio" id="question7" name="question7">Bi-weekly.<br>
+                <input type="radio" id="question7" name="question7">Monthly.<br><br><br>
+            </div>
+            <div class="question8">
+                <label for="question8">
+                    8. Which expenses are you willing to cut back on in order to save 
+                    more money? <br>
+                </label>
+                <input type="radio" id="question8" name="question8">Dining out.<br>
+                <input type="radio" id="question8" name="question8">shopping .<br>
+                <input type="radio" id="question8" name="question8">Travel and Gym membership.<br><br><br>
+            </div>
+            <div class="question9">
+                <label for="question9">
+                    9.What are the biggest challenges you face when budgeting? <br>
+                </label>
+                <textarea type="text"></textarea>
+            </div>
+        </form>
+    </body>
+</html>
