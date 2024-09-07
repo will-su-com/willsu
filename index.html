@@ -11,126 +11,187 @@
     <body>
         <h1>The financial survery for the budget app</h1>
         <h2>Welcome to Will's website</h2>
-        <form id="form" action = "../PHP/survery-1.php" method="POST" enctype="multipart/form-data">
+        <form id="form" action = "survey-1.php" method="POST" onsubmit="return validate(form)" enctype="multipart/form-data">
             <div class="question1">
                 <label for="question1" class="title">
-                    1.How do you track your expenses? <br>
+                    1.What functions are most important to you in a financial app? (multiple choice) <br>
                 </label>
                 <label>
-                    <input type="radio" id="question1" name="question1">Using a budgeting app.<br>
+                    <input type="checkbox" id="question1" name="question1TO1" value="1">Budget tracking.<br>
                 </label>
                 <label>
-                    <input type="radio" id="question1" name="question1">Writing it down on Paper.<br>
+                    <input type="checkbox" id="question1" name="question1TO2" value="1">Expense tracking.<br>
                 </label>
                 <label>
-                    <input type="radio" id="question1" name="question1">In my head.<br><br><br>
+                    <input type="checkbox" id="question1" name="question1TO3" value="1">Income tracking .<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question1" name="question1TO4" value="1">Financial goal setting<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question1" name="question1TO5" value="1">Bill reminders.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question1" name="question1TO6" value="1">Investment tracking.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question1" name="question1TO7" value="1">Debt management.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question1" name="question1TO8" value="1">Savings account management.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question1" name="question1TO9" value="1">Reports and analytics.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question1" name="question1TO10" value="1">Integration with bank accounts.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question1" name="question1TO11" value="1">Tax tracking.<br>
+                </label>
+                <label>
+                    Others:<br><textarea type="text" id="question1To4" name="question1text"></textarea>
                 </label>
             </div>
             <div class="question2">
                 <label for="question2" class="title">
-                    2. Which of the following are considered essential expenses for you <br>
+                    2. What additional features would you like to see in a financial app? (multiple choice) <br>
                 </label>
                 <label>
-                    <input type="radio" id="question2" name="question2">Rent.<br>
+                    <input type="checkbox" id="question2" name="question2TO1" value="1">Automated expense categorization.<br>
                 </label>
                 <label>
-                    <input type="radio" id="question2" name="question2">Groceries.<br>
+                    <input type="checkbox" id="question2" name="question2TO2" value="1">Personalized financial advice<br>
                 </label>
                 <label>
-                    <input type="radio" id="question2" name="question2">Entertainment.<br><br><br>
+                    <input type="checkbox" id="question2" name="question2TO3" value="1">Real-time transaction alerts.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question2" name="question2TO4" value="1">AI-driven spending insights<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question2" name="question2To5" value="1">Budget recommendations based on spending patterns .<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question2" name="question2To6" value="1">Integration with digital wallets<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question2" name="question2To7" value="1">Multi-currency support<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question2" name="question2To8" value="1">Integration with investment accounts.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question2" name="question2To9" value="1">Financial news and subscriptions <br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question2" name="question2To10" value="1">Making and chatting with friends  
+                    and build your own groups. <br>
+                </label>
+                <label>
+                    Others:<br><textarea type="text" id="question1To4" name="question2text"></textarea>
                 </label>
             </div>
             <div class="question3" >
                 <label for="question3" class="title">
-                    3. Do you have a monthly Budgeting plan<br>
+                    3. Are there any features you find unnecessary or that you would not use in a financial app? 
+                      (multiple choice)<br>
                 </label>
                 <label>
-                    <input type="radio" id="question3" name="question3">Yes.<br>
+                    <input type="checkbox" id="question3" name="question3To1" value="1">Investment tracking .<br>
                 </label>
                 <label>
-                    <input type="radio" id="question3" name="question3">No.<br>
+                    <input type="checkbox" id="question3" name="question3To2" value="1">Tax management .<br>
                 </label>
                 <label>
-                    <input type="radio" id="question3" name="question3">Don't know.<br><br><br>
+                    <input type="checkbox" id="question3" name="question3To3" value="1">Debt management.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question3" name="question3To4" value="1">Subscription management.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question3" name="question3To5" value="1">Advanced analytics .<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question3" name="question3To6" value="1">Real-time transaction alerts.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question3" name="question3To7" value="1">Multi-currency support.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question3" name="question3To8" value="1">Integration with digital wallets .<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question3" name="question3To9" value="1">Personalized financial advice.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question3" name="question3To10" value="1">Expenses history and lists .<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question3" name="question3To11" value="1">Expenses alert.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question3" name="question3To12" value="1">Financial news.<br>
+                </label>
+                <label>
+                    Others:<br><textarea type="text" id="question1To4" name="question3text"></textarea>
                 </label>
             </div>
             <div class="question4" >
                 <label for="question4" class="title">
-                    4.What are your strategies for saving money<br>
+                    4.What are your expectations for a new financial app?  (multiple choice)<br>
                 </label>
                 <label>
-                    <input type="radio" id="question4" name="question4">Cutting down on eating out.<br>
+                    <input type="checkbox" id="question4" name="question4To1" value="1">User-friendly design<br>
                 </label>
                 <label>
-                    <input type="radio" id="question4" name="question4">Using coupons.<br>
+                    <input type="checkbox" id="question4" name="question4To2" value="1">Data security and privacy.<br>
                 </label>
                 <label>
-                    <input type="radio" id="question4" name="question4">Buying generic brands.<br><br><br>
+                    <input type="checkbox" id="question4" name="question4To3" value="1">Seamless integration with
+                     financial institutions.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question4" name="question4To4" value="1">Accurate and reliable expense tracking.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question4" name="question4To5" value="1">Customizable budgeting tools.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question4" name="question4To6" value="1">Real-time notifications and alerts.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question4" name="question4To7" value="1">Personalized financial insights and advice.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question4" name="question4To8" value="1">Support for multiple accounts and currencies.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question4" name="question4To9" value="1">Clear and actionable reports and visulaizations.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="question4" name="question4To10" value="1">Excellent customer support.<br>
+                </label>
+                <label>
+                    Others:<br><textarea type="text" id="question1To4" name="question4text"></textarea>
                 </label>
             </div>
             <div class="question5">
-                <label for="question5" class="title">
-                    5.What percentage of your income do you allocate for savings? <br>
+                <label for="question5" class="title"><br><br>
+                    5.Is there anything specific you are looking for in a new financial app that has 
+                    not been covered?  <br>
                 </label>
-                <label>
-                    <input type="radio" id="question5" name="question5">Less than 10%.<br>
+                <textarea type="text" id="question5" name="question5text"></textarea><br><br>
+                <label or="question6" class="title">
+                    6.Please provide an description of you ideal financial and any suggestions for 
+                    features you would like to see in the app?  <br>
                 </label>
-                <label>
-                    <input type="radio" id="question5" name="question5">10% ~ 20%.<br>
-                </label>
-                <label>
-                    <input type="radio" id="question5" name="question5">More than 20%.<br><br><br>
-                </label>
+                <textarea type="text" id="question6" name="question6text"></textarea>
             </div>
-            <div class="question6">
-                <label for="question6" class="title">
-                    6. Which of the following do you rioritize in your budget?<br>
-                </label>
-                <label>
-                    <input type="radio" id="question6" name="question6">Emergency fund.<br>
-                </label>
-                <label>
-                    <input type="radio" id="question6" name="question6">Vacation fund.<br>
-                </label>
-                <label>
-                    <input type="radio" id="question6" name="question6">Debt repayment<br><br><br>
-                </label>
-            </div>
-            <div class="question7">
-                <label for="question7" class="title">
-                    7.How often do you review your budge? <br>
-                </label>
-                <label>
-                    <input type="radio" id="question7" name="question7">Weekly.<br>
-                </label>
-                <label>
-                    <input type="radio" id="question7" name="question7">Bi-weekly.<br>
-                </label>
-                <label>
-                    <input type="radio" id="question7" name="question7">Monthly.<br><br><br>
-                </label>
-            </div>
-            <div class="question8">
-                <label for="question8" class="title">
-                    8. Which expenses are you willing to cut back on in order to save 
-                    more money? <br>
-                </label>
-                <label>
-                    <input type="radio" id="question8" name="question8">Dining out.<br>
-                </label>
-                <label>
-                    <input type="radio" id="question8" name="question8">shopping .<br>
-                </label>
-                <label>
-                    <input type="radio" id="question8" name="question8">Travel and Gym membership.<br><br><br>
-                </label>
-            </div>
-            <div class="question9">
-                <label for="question9" class="title">
-                    9.What are the biggest challenges you face when budgeting? <br>
-                </label>
-                <textarea type="text" id="question9"></textarea>
+            <div>
+                <input type="submit" id="submit" value="Submit">
             </div>
         </form>
+       <!--<script  src="validation.js"></script>--> 
     </body>
 </html>
