@@ -1,0 +1,66 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+}
+h1 {
+    font-size: 36px;  /* the size ofthe text  */
+    text-align: center;
+    color:white;   /* the text color  */ 
+    background-color:#5a5854;   /* sets the background color  */
+    /* border-bottom: 1px solid #bdbdbd;  /* adds a border around the edge of the input box  */
+    padding: 20px 10px 20px 10px; 
+    display: block;
+}
+h3 {
+    text-align: justify;
+    font-family:Helvetica;
+}
+
+.nav li {
+    font: bold 20px "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    display: inline-block;
+    background-color: #ffffff;
+    color: black;
+    padding: 10px;
+    margin:20px;
+    background-position: center;
+    border-radius: 10px;
+}
+.nav a{
+    color:black;
+    text-align:center;
+    text-decoration:none; 
+}
+.nav{
+    position:relative;
+    left: 500px;
+}
+
+ li:hover{
+    background-color:#339933;
+    color:white;
+    border-radius: 10px;
+}
+.nav li:first-child{
+    background-color:#339933;
+    border-radius: 10px;
+}
+body{
+    margin-bottom: 50px;
+}
+
+header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+footer {
+    margin:12% 0px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333333;
+    color: #ffffff;
+}
