@@ -34,7 +34,7 @@ h3 {
 }
 .nav{
     position:relative;
-    left: 500px;
+    right: 20%;
 }
 
  li:hover{
