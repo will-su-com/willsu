@@ -1,4 +1,5 @@
-.container {
+
+.wrapper-main {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Full height of the viewport */
@@ -16,40 +17,44 @@ h3 {
     text-align: justify;
     font-family:Helvetica;
 }
+div#mainMenu nav{
+    float:right; 
+}
 
-.nav li {
+li {
     font: bold 20px "Helvetica Neue", Helvetica, Arial, Sans-serif;
     display: inline-block;
     background-color: #ffffff;
-    color: black;
     padding: 10px;
-    margin:20px;
+    margin:10px;
     background-position: center;
     border-radius: 10px;
 }
-.nav a{
-    color:black;
-    text-align:center;
-    text-decoration:none; 
-}
-.nav{
-    position:relative;
-    left: 50%;
+li a{
+    text-decoration:none;
 }
 
- li:hover{
+li:first-child{
     background-color:#339933;
-    color:white;
-    border-radius: 10px;
 }
-.nav li:first-child{
+li#home a{
+    color: white;
+}
+
+li:not(:first-child) a{
+    color:black;
+}
+
+li:hover, li:link, li:active {
     background-color:#339933;
-    border-radius: 10px;
+}
+li:hover a { 
+    color:white; 
 }
 body{
     margin-bottom: 50px;
-}
-
+    overflow-x:hidden;
+    }
 header {
     background-color: #333333;
     color: #ffffff;
@@ -62,5 +67,75 @@ footer {
     padding: 10px 0;
     background-color: #333333;
     color: #ffffff;
-    bottom: 0;
+}
+
+/* Mobile styles */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+    div.nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .nav li {
+        margin: 10px 0;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 32px;
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    header h1 {
+        font-size: 40px;
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .nav li {
+        margin: 0 15px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+/* Laptop styles */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    header h1 {
+        font-size: 36px;
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .nav li {
+        margin: 0 10px;
+    }
+    p {
+        font-size: 19px;
+    }
 }
