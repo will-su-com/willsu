@@ -3,35 +3,34 @@
     <head>
         <title>Welcome to Will's website</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!--device width as the width of the viewport and its initial scale factor will be one-->
     </head>
     <style>
         @import url('website.css');
     </style>
+    <script src="mainPage.js"></script>
     <body>
-        <div class="container">
+        <div class="wrapper-main">
         <header>
             <h1>Welcome to Will's  website</h1>
             <a href="www.google.com">Visit the google.com </a>
+            <div id="mainMenu">
                <nav class="nav">
                  <ul>
-                     <li> <a href="index.html">Home</a></li>
-                     <li> <a href="About.html">About</a></li>
-                     <li> <a href="Protofolio.html">Protofolio</a></li>
-                     <li> <a href="service.html">Services</a></li>
-                     <li> <a href="Contact.html">Contact</a></li>
+                     <li id="home"> <a href="index.html"  onclick="changeMainMenuColor()">Home</a></li>
+                     <li id= "about"> <a href="About.html"  onclick="changeMainMenuColor()">About</a></li>
+                     <li id="protofolio"> <a href="Protofolio.html"  onclick="changeMainMenuColor()">Protofolio</a></li>
+                     <li id = " services"> <a href="service.html"  onclick="changeMainMenuColor()">Services</a></li>
+                     <li id= "contact"> <a href="Contact.html"  onclick="changeMainMenuColor()">Contact</a></li>
                  </ul>
                 </nav>
+            </div>
         </header>
-            <main>
-                <article>
-                    <img alt="" src="">
-                   <h3>The website is updating now</h3> 
-                    <p></p>
-                    <buttom></buttom>
-                </article>
-            
-            </main>
+      <p>
+        Hello this is the writting the website 
+      </p>
+
        <!--<script  src="validation.js"></script>--> 
        <footer>
         <p>&copy; 2024 Will Su. All rights reserved.</p>
